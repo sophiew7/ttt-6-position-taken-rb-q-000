@@ -1,10 +1,10 @@
-def position_taken?(board,position)
-  if board[position]== " " || "" || nil
+def position_taken?(board=[" "," "," "," "," "," "," "," "," "],position)
+  if board[position] == " " || board[position] == "" || board[position] == nil
     return false
-  elsif board[position]=="X" || "O"
-    return true
   else
-    return nil
+    return true
   end
 end
+
+
 
